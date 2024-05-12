@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Exams</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<table class="pdf-table">
+  <thead>
+    <tr>
+      <th colspan="3" class="header">EXAMS</th>
+    </tr>
+    <tr>
+      <th>File Name</th>
+      <th>Year</th>
+      <th>Exam Type</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td><a href="#" onclick="openPDF('uploadedFiles/alltomorrows.pdf')">MEHMET EMIN BASTEM</a></td>
+      <td>2022</td>
+      <td>Mid Term Exam</td>
+    </tr>
+
+    <tr>
+      <td><a href="#" onclick="openPDF('uploadedFiles/jojo.pdf')">JOJO'S BIZARRE ADVENTURE</a></td>
+      <td>2023</td>
+      <td>Quiz</td>
+    </tr>
+
+    <tr>
+      <td><a href="#" onclick="openPDF('uploadedFiles/rakustik.pdf')">Z-RAKUSTIK REPERTUAR</a></td>
+      <td>2024</td>
+      <td>Final Exam</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<script>
+function openPDF(filename) {
+    window.open(filename, '_blank');
+}
+</script>
+
+</body>
+</html>
