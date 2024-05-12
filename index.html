@@ -15,6 +15,7 @@
     <input type="text" id="searchInput" placeholder="Search exams...">
     <select id="yearFilter">
       <option value="all">All Years</option>
+      <option value="2021">2021</option>
       <option value="2022">2022</option>
       <option value="2023">2023</option>
       <option value="2024">2024</option>
@@ -24,34 +25,73 @@
       <option value="Mid Term Exam">Mid Term Exam</option>
       <option value="Quiz">Quiz</option>
       <option value="Final Exam">Final Exam</option>
-    </select>
+    </select>    
   </div>
 
   <table class="pdf-table">
     <thead>
       <tr>
         <th>File Name</th>
+        <th>Lecture Name</th>
         <th>Year</th>
         <th>Exam Type</th>
       </tr>
     </thead>
     <tbody>
 
-      <tr data-year="2022" data-type="Mid Term Exam">
-        <td><a href="uploadedFiles/alltomorrows.pdf" target="_blank">MEHMET EMIN BASTEM</a></td>
+      <tr data-year="2022" data-type="Quiz">
+        <td><a href="files/bp1/BP1_Quiz7_2023.pdf" target="_blank">Genetic Algorithm</a></td>
+        <td>BP1</td>
         <td>2022</td>
-        <td>Mid Term Exam</td>
+        <td>Quiz</td>
       </tr>
 
       <tr data-year="2023" data-type="Quiz">
-        <td><a href="uploadedFiles/jojo.pdf" target="_blank">JOJO'S BIZARRE ADVENTURE</a></td>
+        <td><a href="files/bp2/BP2_Quiz7_2023.pdf" target="_blank">7-Segment Led</a></td>
+        <td>BP2</td>
         <td>2023</td>
         <td>Quiz</td>
       </tr>
 
-      <tr data-year="2024" data-type="Final Exam">
-        <td><a href="uploadedFiles/rakustik.pdf" target="_blank">Z-RAKUSTIK REPERTUAR</a></td>
-        <td>2024</td>
+      <tr data-year="2021" data-type="Mid Term Exam">
+        <td><a href="files/bp1/BP1_Midterm_2021.pdf" target="_blank">2021 BP1 Mid Term</a></td>
+        <td>BP1</td>
+        <td>2021</td>
+        <td>Mid Term Exam</td>
+      </tr>
+
+      <tr data-year="2022" data-type="Mid Term Exam">
+        <td><a href="files/bp1/BP1_Midterm_2022.pdf" target="_blank">2022 BP1 Mid Term</a></td>
+        <td>BP1</td>
+        <td>2022</td>
+        <td>Mid Term Exam</td>
+      </tr>
+
+      <tr data-year="2022" data-type="Mid Term Exam">
+        <td><a href="files/bp2/BP2_MidTerm_2022.pdf" target="_blank">2022 BP2 Mid Term</a></td>
+        <td>BP2</td>
+        <td>2022</td>
+        <td>Mid Term Exam</td>
+      </tr>
+
+      <tr data-year="2023" data-type="Mid Term Exam">
+        <td><a href="files/bp2/BP2_MidTerm_2023.pdf" target="_blank">2023 BP2 Mid Term</a></td>
+        <td>BP2</td>
+        <td>2023</td>
+        <td>Mid Term Exam</td>
+      </tr>
+
+      <tr data-year="2022" data-type="Final Exam">
+        <td><a href="files/bp1/BP1_Final_2022.pdf" target="_blank">2022 BP1 Final Exam</a></td>
+        <td>BP1</td>
+        <td>2022</td>
+        <td>Final Exam</td>
+      </tr>
+
+      <tr data-year="2023" data-type="Final Exam">
+        <td><a href="files/bp2/BP2_Final_2023.pdf" target="_blank">2023 BP2 Final Exam</a></td>
+        <td>BP2</td>
+        <td>2023</td>
         <td>Final Exam</td>
       </tr>
       
