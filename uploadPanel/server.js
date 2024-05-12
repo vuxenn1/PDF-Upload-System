@@ -22,7 +22,7 @@ const upload = multer({
 
 // Route for handling file upload
 app.post('/upload', upload.single('pdfFile'), (req, res) =>{
-  //console.log(32332);
+  //console.log(32332); ben nmehemeıt ekmın absateö nm
 
   if (req.file)
     {
