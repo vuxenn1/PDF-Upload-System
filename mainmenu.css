@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .menu h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #3366a0;
+  }
+  
+  #facultyMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #facultyMenu > li {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  #facultyMenu > li > span {
+    cursor: pointer;
+    display: inline-block;
+    width: 200px; /* Adjust button width */
+    height: 50px; /* Adjust button height */
+    line-height: 50px; /* Center text vertically */
+    border: 1px solid #3366a0;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #3366a0;
+    transition: background-color 0.3s ease;
+  }
+  
+  #facultyMenu > li:hover > span {
+    background-color: #3366a0;
+    color: #fff;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 2;
+  }
+  
+  #facultyMenu > li:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    margin-bottom: 5px;
+  }
+  
+  .submenu li a {
+    display: block;
+    width: 200px; /* Adjust submenu button width */
+    height: 50px; /* Adjust submenu button height */
+    line-height: 50px; /* Center text vertically */
+    padding: 0;
+    color: #3366a0;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #3366a0;
+    border-radius: 5px;
+  }
+  
+  .submenu li a:hover {
+    background-color: #3366a0;
+    color: #fff;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .menu h2 {
+      font-size: 18px;
+    }
+  
+    #facultyMenu > li > span,
+    .submenu li a {
+      width: 150px; /* Adjust button width for smaller screens */
+      height: 40px; /* Adjust button height for smaller screens */
+      line-height: 40px; /* Center text vertically for smaller screens */
+    }
+  }  
